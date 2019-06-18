@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Needtl" max_length="40" name="x_58872_needit_needtl" sizeclass="3" type="collection">
+        <element label="New Field 2" max_length="40" name="new_field_2" type="integer"/>
+        <element label="CampoPrueba" max_length="40" name="u_campo_prueba" type="integer"/>
+    </element>
+</database>
