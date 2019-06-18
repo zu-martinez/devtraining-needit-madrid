@@ -2,5 +2,27 @@
     <element extends="task" label="Needtl" max_length="40" name="x_58872_needit_needtl" sizeclass="3" type="collection">
         <element label="New Field 2" max_length="40" name="new_field_2" type="integer"/>
         <element label="CampoPrueba" max_length="40" name="u_campo_prueba" type="integer"/>
+        <element label="Solicitado para" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal" label="Tipo de Solicitud" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Recursos Humanos" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="Instalaciones" sequence="1" value="instalaciones"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="Su elección de departamento" sequence="3" value="your choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal 1" label="Lo que necesitaba" mandatory="true" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Recursos Humanos 1" sequence="0" value="rh1"/>
+                <element inactive_on_update="false" label="Recursos Humanos 2" sequence="1" value="rh2"/>
+                <element inactive_on_update="false" label="Instalaciones 1" sequence="2" value="instalaciones 1"/>
+                <element inactive_on_update="false" label="Instalaciones 2" sequence="3" value="instalaciones 2"/>
+                <element inactive_on_update="false" label="Legal 1" sequence="4" value="legal 1"/>
+                <element inactive_on_update="false" label="Legal 2" sequence="5" value="legal 2"/>
+                <element inactive_on_update="false" label="Su opción de departamento 1" sequence="6" value="choice 1"/>
+                <element inactive_on_update="false" label="Su opción de departamento 2" sequence="7" value="choice 2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Cuando Sea Necesario" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
     </element>
 </database>
